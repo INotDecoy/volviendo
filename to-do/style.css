@@ -1,0 +1,36 @@
+body{
+    background-color: #2e2c2c;
+    color: white
+}
+.titulo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #504e4e25;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+.inp{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
