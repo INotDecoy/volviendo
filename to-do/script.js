@@ -14,12 +14,14 @@ function agregar() {
         lista.appendChild(tarea);
         tarea.classList.add("tarea");
         tarea.id = "tarea" + Date.now()
+   
 
         /* Modificar */
         let btnM = document.createElement('button')
         btnM.classList.add("btnM")
         btnM.innerText = "Mod"
         tarea.appendChild(btnM)
+        btnM.type = "button"
         btnM.onclick = () => {
             const mod = prompt("Modifica el Texto", tarea.firstChild.textContent);
             if (mod !== null) {
@@ -35,6 +37,13 @@ function agregar() {
         btn.onclick = () => {
             tarea.remove();
         }
+
+
+        let botones = document.createElement('div');
+        botones.classList.add('botones');
+        botones.appendChild(btnM);
+        botones.appendChild(btn);
+        tarea.appendChild(botones)
     }
     /* Dejo el input en blanco  */
     input.value = ""

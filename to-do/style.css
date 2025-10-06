@@ -47,15 +47,23 @@ body{
     border-color: green;
 }
 
+.botones{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .tarea{
     display: flex;
     text-transform: capitalize;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
     font-size: 1.10rem;
+    width: 80% auto;
 }
 
-.btnX{
+/* .btnX{
     color: white;
     background-color: red;
     border-radius: 5px;
@@ -64,7 +72,7 @@ body{
     font-size: 10px;
     right: 100%;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .btnM{
     color: white;
@@ -73,8 +81,40 @@ body{
     margin: 8px;
     border-color: rgb(29, 129, 187);
     font-size: 10px;
-    margin-right: 0;
-    text-align: center;
-    justify-content: center;
+    margin-right: 2px;
+    text-align: right;
+    justify-content: flex-end;
     margin-left: 7.5rem;
+}
+ */
+.btnX, .btnM {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 4px 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btnX {
+    background-color: red;
+}
+
+.btnM {
+    background-color: rgb(29, 129, 187);
+}
+
+.acciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.guardar, .borrar{
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    align-items: center;
 }
