@@ -27,7 +27,6 @@ function agregar() {
         // Detectar cuando se marca
         check.addEventListener('change', () => {
             tarea.classList.toggle('completada', check.checked);
-            btnM.remove()
         });
 
         /* Modificar */
